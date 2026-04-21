@@ -6,6 +6,14 @@
   border-radius: 10px;
 }
 
+.casco-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
 .detail-card {
   border: 2px solid black;
   padding: 15px;

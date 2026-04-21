@@ -9,5 +9,5 @@ import { DriverList } from './driver-list/driver-list';
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('formula1');
+  
 }

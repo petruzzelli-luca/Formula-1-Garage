@@ -1,16 +1,17 @@
-<div class="card"
-     *ngFor="let driver of drivers"
-     (click)="selectDriver(driver)"
-     [ngStyle]="{'border-color': getColor(driver.scuderia)}">
+@for (driver of drivers; track driver.nome) {
+  <div class="card"
+       (click)="selectDriver(driver)"
+       [ngStyle]="{'border-color': getColor(driver.scuderia)}">
 
-  <h3>{{ driver.nome }}</h3>
-  <p>{{ driver.scuderia }}</p>
-  <p>#{{ driver.numeroGara }}</p>
+    <h3>{{ driver.nome }}</h3>
+    <p>{{ driver.scuderia }}</p>
+    <p>#{{ driver.numeroGara }}</p>
 
-</div>
+  </div>
+}
 
-<app-driver-detail
-  *ngIf="selectedDriver"
-  [driver]="selectedDriver">
-
-</app-driver-detail>
+@if (selectedDriver) {
+  <app-driver-detail
+    [driver]="selectedDriver">
+  </app-driver-detail>
+}
