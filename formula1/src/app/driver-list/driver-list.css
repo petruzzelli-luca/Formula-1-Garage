@@ -1,0 +1,14 @@
+.card {
+  border: 3px solid;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.detail-card {
+  border: 2px solid black;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
