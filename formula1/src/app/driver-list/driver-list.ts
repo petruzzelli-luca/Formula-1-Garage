@@ -17,9 +17,9 @@ export class DriverList {
       nome: 'Charles Leclerc',
       scuderia: 'Ferrari',
       numeroGara: 16,
-      punti: 250,
+      punti: 350,
       nazione: 'Monaco',
-      immagineCasco: 'https://via.placeholder.com/100'
+      immagineCasco: 'helmets/leclerc.jpg'
     },
     {
       nome: 'Max Verstappen',
@@ -27,7 +27,7 @@ export class DriverList {
       numeroGara: 1,
       punti: 300,
       nazione: 'Olanda',
-      immagineCasco: 'https://via.placeholder.com/100'
+      immagineCasco: 'helmets/verstappen.jpg'
     },
     {
       nome: 'Lewis Hamilton',
@@ -35,7 +35,7 @@ export class DriverList {
       numeroGara: 44,
       punti: 200,
       nazione: 'Regno Unito',
-      immagineCasco: 'https://via.placeholder.com/100'
+      immagineCasco: 'helmets/hamilton.jpg'
     }
   ];
 
@@ -43,14 +43,6 @@ export class DriverList {
     this.selectedDriver = driver;
   }
 
-  getColor(scuderia: string): string {
-  switch (scuderia) {
-    case 'Ferrari': return 'red';
-    case 'Red Bull': return 'blue';
-    case 'Mercedes': return 'silver';
-    default: return 'black';
-  }
-}
 }
 
 
