@@ -5,4 +5,5 @@ export interface Driver {
   punti: number;
   nazione: string;
   immagineCasco: string;
+  coloreScuderia: string;
 }

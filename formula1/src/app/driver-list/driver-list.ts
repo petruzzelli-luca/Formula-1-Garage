@@ -19,7 +19,8 @@ export class DriverList {
       numeroGara: 16,
       punti: 350,
       nazione: 'Monaco',
-      immagineCasco: 'helmets/leclerc.jpg'
+      immagineCasco: 'helmets/leclerc.jpg',
+      coloreScuderia: '#DC0000'
     },
     {
       nome: 'Max Verstappen',
@@ -27,7 +28,8 @@ export class DriverList {
       numeroGara: 1,
       punti: 300,
       nazione: 'Olanda',
-      immagineCasco: 'helmets/verstappen.jpg'
+      immagineCasco: 'helmets/verstappen.jpg',
+      coloreScuderia: '#1E41FF'
     },
     {
       nome: 'Lewis Hamilton',
@@ -35,13 +37,16 @@ export class DriverList {
       numeroGara: 44,
       punti: 200,
       nazione: 'Regno Unito',
-      immagineCasco: 'helmets/hamilton.jpg'
+      immagineCasco: 'helmets/hamilton.jpg',
+      coloreScuderia: '#00D2BE'
     }
   ];
 
   selectDriver(driver: Driver) {
     this.selectedDriver = driver;
   }
+
+
 
 }
 
