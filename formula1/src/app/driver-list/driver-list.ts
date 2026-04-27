@@ -10,9 +10,9 @@ import { DriverDetail } from '../driver-detail/driver-detail';
   styleUrl: './driver-list.css',
 })
 export class DriverList {
-  selectedDriver?: Driver;
+  selectedDriver?: Driver;    //variabile per tenere traccia del driver selezionato
 
-  drivers: Driver[] = [
+  drivers: Driver[] = [       //drivers è un array di oggetti di tipo Driver
     {
       nome: 'Charles Leclerc',
       scuderia: 'Ferrari',
@@ -42,7 +42,7 @@ export class DriverList {
     }
   ];
 
-  selectDriver(driver: Driver) {
+  selectDriver(driver: Driver) {   //metodo per selezionare un driver e visualizzarne i dettagli
     this.selectedDriver = driver;
   }
 
