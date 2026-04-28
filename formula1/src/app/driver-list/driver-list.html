@@ -2,7 +2,9 @@
   <div class="list-container">
     @for (driver of drivers; track driver.nome) {
       <div class="card"
-           (click)="selectDriver(driver)">
+           (mouseenter)="selectDriver(driver)"
+           (mouseleave)="selectedDriver = undefined"
+           [style.border-color]="driver.coloreScuderia">
 
         <h3>{{ driver.nome }}</h3>
         <p>{{ driver.scuderia }}</p>
@@ -13,7 +15,7 @@
   </div>
 
   <div class="detail-container">
-    @if (selectedDriver) {   //se è stato selezionato un driver, mostra i dettagli
+    @if (selectedDriver) {   
       <app-driver-detail
         [driver]="selectedDriver">  //passa il driver selezionato come input al componente driver-detail
       </app-driver-detail>

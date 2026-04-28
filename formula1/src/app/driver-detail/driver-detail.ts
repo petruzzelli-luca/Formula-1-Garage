@@ -8,5 +8,5 @@ import { Driver } from '../models/driver.model';
   styleUrl: './driver-detail.css',
 })
 export class DriverDetail {
-  @Input() driver!: Driver;
+  @Input() driver!: Driver;  //ricevere i dati del driver selezionato dal componente padre
 }
